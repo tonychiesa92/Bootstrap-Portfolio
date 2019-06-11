@@ -12,15 +12,32 @@
     <title>Bootstrap Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer/">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        .jumbotron{
+            margin-top: 30px;
+        }
+        
+        .navbar-text{
+            padding: 0px;
+        }
+        .navbar{
+            padding: 0px;
+        }
+       
+        
+    </style>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
             <h1 class="text-white bg-info font-weight-bold">Tony Chiesa</h1>
@@ -38,37 +55,44 @@
             </li>
         </ul>
     </nav>
+
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2 class="font-weight-bold">About Me</h2>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-bold">About Me</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12321671_10203921988969128_8938461667858981864_n.jpg?_nc_cat=102&_nc_oc=AQlGzxZc_K0otoImU86MM63HwmHnCqx_9z2X67JTgK57kSIk682TsBLBp2wMUrvaoPQt0K7tIKOTQXeDl2VpAkBg&_nc_ht=scontent-atl3-1.xx&oh=20c6d3b8114fed68cb0cd0fca935e100&oe=5D52AE22"
+                        class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-9">
+                    <p class="line-height-large">My name is Anthony Chiesa, but I go by Tony. I am 26 years old. I am
+                        currently a student at the
+                        Georiga Tech Coding Bootcamp. My first programming experience was in high school where I took
+                        C++
+                        and JAVA classes. I studied Mechanical Engineering at Virginia Commonwealth University where I
+                        got
+                        programming experience with MATLab and other engineering specific languages.</p>
+                    <br>
+                    <p>My hobbies include games like chess, poker, and Magic the Gathering. I also enjoy golfing and
+                        watching soccer and hockey in my spare time. My favorite movies are Pulp Fiction and The Big
+                        Lebowski. My favorite superhero is Spiderman.</p>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-3">
-                <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12321671_10203921988969128_8938461667858981864_n.jpg?_nc_cat=102&_nc_oc=AQlGzxZc_K0otoImU86MM63HwmHnCqx_9z2X67JTgK57kSIk682TsBLBp2wMUrvaoPQt0K7tIKOTQXeDl2VpAkBg&_nc_ht=scontent-atl3-1.xx&oh=20c6d3b8114fed68cb0cd0fca935e100&oe=5D52AE22"
-                    class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col-9">
-                <p class="line-height-large">My name is Anthony Chiesa, but I go by Tony. I am 26 years old. I am currently a student at the
-                    Georiga Tech Coding Bootcamp. My first programming experience was in high school where I took C++
-                    and JAVA classes. I studied Mechanical Engineering at Virginia Commonwealth University where I got
-                    programming experience with MATLab and other engineering specific languages.</p>
-                <br>
-                <p>My hobbies include games like chess, poker, and Magic the Gathering. I also enjoy golfing and
-                    watching soccer and hockey in my spare time. My favorite movies are Pulp Fiction and The Big
-                    Lebowski. My favorite superhero is Spiderman.</p>
 
-            </div>
-
-        </div>
     </div>
+
     <footer class="footer mt-auto py-3">
         <div class="container">
-          <p class="text-center">Copyrite &copy;</p>
+            <span class="text-muted">copyright</span>
         </div>
     </footer>
+
 
     <script src="" async defer></script>
 </body>
