@@ -16,6 +16,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+
+        }
+
         body {
             background-image: url('images/email-pattern.png');
         }
@@ -24,7 +31,7 @@
         .jumbotron {
             margin-top: 30px;
 
-
+            margin: 0 auto;
         }
 
         .bg-info {
@@ -41,6 +48,26 @@
             padding: 0px;
             margin: 0 auto;
         }
+
+        .mywrapper {
+            min-height: 100%;
+            margin-bottom: -70px;
+        }
+
+
+        .mypush {
+            height: 50px;
+        }
+
+        .myfooter {
+            margin-top: 20px;
+            height: 50px;
+            background: #666666;
+            width: 100%;
+            border-top: 8px solid #4aaaa5;
+            text-align: center;
+            color: #ffffff;
+        }
     </style>
 </head>
 
@@ -48,72 +75,70 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-text">
-            <h1 class="text-white bg-info">Tony Chiesa</h1>
-        </span>
+    <div class="mywrapper">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-text">
+                <h1 class="text-white bg-info">Tony Chiesa</h1>
+            </span>
 
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col">
-                    <h2 class="font-weight-bold">Portfolio</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="container">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
                 <div class="row">
-                    <div class="col-4">
-                        <img src="images/beach.jfif" class="img-fluid" alt="Responsive image">
+                    <div class="col">
+                        <h2 class="font-weight-bold">Portfolio</h2>
                     </div>
-                    <div class="col-4">
-                        <img src="images/chess.jpeg" class="img-fluid" alt="Responsive image">
-                    </div>
-
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/earphone.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-4">
-                        <img src="images/mountain.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/beach.jfif" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/chess.jpeg" class="img-fluid" alt="Responsive image">
+                        </div>
 
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/earphone.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/mountain.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/party.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="col-4">
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/party.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-4">
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p>Copyright &copy;</p>
             </div>
         </div>
+
+        <div class="mypush"></div>
     </div>
 
-
+    <footer class="myfooter">
+        Copyright &copy;
+    </footer>
 
     <script src="" async defer></script>
 </body>

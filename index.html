@@ -20,6 +20,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+
+        }
+
         body {
             background-image: url('images/email-pattern.png');
         }
@@ -45,6 +52,26 @@
             padding: 0px;
             margin: 0 auto;
         }
+
+        .mywrapper {
+            min-height: 100%;
+            margin-bottom: -70px;
+        }
+
+
+        .mypush {
+            height: 50px;
+        }
+
+        .myfooter {
+            margin-top: 20px;
+            height: 50px;
+            background: #666666;
+            width: 100%;
+            border-top: 8px solid #4aaaa5;
+            text-align: center;
+            color: #ffffff;
+        }
     </style>
 </head>
 
@@ -52,60 +79,61 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <div class="mywrapper">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-text">
+                <h1 class="text-white bg-info font-weight-bold">Tony Chiesa</h1>
+            </span>
 
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-text">
-            <h1 class="text-white bg-info font-weight-bold">Tony Chiesa</h1>
-        </span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col">
-                    <h2 class="font-weight-bold">About Me</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/mepic.jpg"
-                        class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="col-9">
-                    <p class="line-height-large">My name is Anthony Chiesa, but I go by Tony. I am 26 years old. I am
-                        currently a student at the
-                        Georiga Tech Coding Bootcamp. My first programming experience was in high school where I took
-                        C++
-                        and JAVA classes. I studied Mechanical Engineering at Virginia Commonwealth University where I
-                        got
-                        programming experience with MATLab and other engineering specific languages.</p>
-                    <br>
-                    <p>My hobbies include games like chess, poker, and Magic the Gathering. I also enjoy golfing and
-                        watching soccer and hockey in my spare time. My favorite movies are Pulp Fiction and The Big
-                        Lebowski. My favorite superhero is Spiderman.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="footer mt-auto py-3">
         <div class="container">
-            <span class="text-muted">copyright</span>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="font-weight-bold">About Me</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/mepic.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-9">
+                        <p class="line-height-large">My name is Anthony Chiesa, but I go by Tony. I am 26 years old. I
+                            am
+                            currently a student at the
+                            Georiga Tech Coding Bootcamp. My first programming experience was in high school where I
+                            took
+                            C++
+                            and JAVA classes. I studied Mechanical Engineering at Virginia Commonwealth University where
+                            I
+                            got
+                            programming experience with MATLab and other engineering specific languages.</p>
+                        <br>
+                        <p>My hobbies include games like chess, poker, and Magic the Gathering. I also enjoy golfing and
+                            watching soccer and hockey in my spare time. My favorite movies are Pulp Fiction and The Big
+                            Lebowski. My favorite superhero is Spiderman.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <div class="mypush"></div>
+    </div>
+    <footer class="myfooter">
+        Copyright &copy;
     </footer>
 
 
