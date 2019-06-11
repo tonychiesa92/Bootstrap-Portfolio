@@ -29,10 +29,11 @@
 
 
         .jumbotron {
-            margin-top: 30px;
+            margin-top: 60px;
 
         }
-        h1{
+
+        h1 {
             margin-bottom: 0px;
         }
 
@@ -70,6 +71,25 @@
             text-align: center;
             color: #ffffff;
         }
+
+        img{
+            margin-bottom: 20px;
+        }
+
+        .thumbnail {
+            position: relative;
+        }
+
+        .caption {
+            position: absolute;
+            top: 70%;
+            left: 0;
+            width: 95%;
+            background-color: #4aaaa5;
+            color: #ffffff;
+            text-align: center;
+            
+        }
     </style>
 </head>
 
@@ -80,7 +100,7 @@
     <div class="mywrapper">
         <nav class="navbar navbar-light bg-light">
             <span class="navbar-text">
-                <h1 class="text-white bg-info">Tony Chiesa</h1>
+                <h1 class="text-white bg-info font-weight-bold">Tony Chiesa</h1>
             </span>
 
             <ul class="nav justify-content-end">
@@ -97,6 +117,18 @@
         </nav>
         <div class="container">
             <div class="jumbotron bg-white">
+
+
+                <!--
+                    Notes
+                    I was unable to get the banner accross the pictures in the portfolio using Bootstrap.
+                    I attempted several Bootstrap examples and was unable to find the apropiate class that would effect the banner across
+                    the image to keep it the same size as the responsive image.
+                    
+                    PSEUDO CODE
+                    Create text over image with Bootstrap class in <div> 
+                    create individual styling
+                -->
                 <div class="row">
                     <div class="col">
                         <h2 class="font-weight-bold">Portfolio</h2>
@@ -104,27 +136,44 @@
                 </div>
                 <hr>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="box-search">
                         <div class="col-4">
-                            <img src="images/beach.jfif" class="img-fluid" alt="Responsive image">
+                            <img src="images/food-q-c-250-200-9.jpg" class="img-fluid border" alt="Responsive image">
+                            <div class="caption">
+                                <p>Hangman</p>
+                            </div>
+
                         </div>
                         <div class="col-4">
-                            <img src="images/chess.jpeg" class="img-fluid" alt="Responsive image">
+                            <img src="images/nature-q-c-250-200-10.jpg" class="img-fluid border" alt="Responsive image">
+                            <div class="caption">
+                                    <p>RPG Game</p>
+                                </div>
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <img src="images/earphone.jpg" class="img-fluid" alt="Responsive image">
+                            <img src="images/nature-q-c-250-200-2.jpg" class="img-fluid border" alt="Responsive image">
+                            <div class="caption">
+                                    <p>Trivia Game</p>
+                                </div>
                         </div>
                         <div class="col-4">
-                            <img src="images/mountain.jpg" class="img-fluid" alt="Responsive image">
+                            <img src="images/nature-q-c-250-200-8.jpg" class="img-fluid border" alt="Responsive image">
+                            <div class="caption">
+                                    <p>Rutgers Info Widget</p>
+                                </div>
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <img src="images/party.jpg" class="img-fluid" alt="Responsive image">
+                            <img src="images/nightlife-q-c-250-200-4.jpg" class="img-fluid border"
+                                alt="Responsive image">
+                                <div class="caption">
+                                        <p>Rock Paper Scissors</p>
+                                    </div>
                         </div>
                         <div class="col-4">
 
